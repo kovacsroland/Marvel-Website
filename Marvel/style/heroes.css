@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800&effect=3d-float');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    color: white;
+    font-size: 40px;
+    font-family: 'Work sans';
+}
+.video{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: -50%;
+    margin-bottom: -50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+.footer{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-right: -50%;
+    bottom: 0;
+    opacity: 1;
+    color: white;
+    font-size: 16px;
+}
+.icon{
+    position: absolute;
+    margin: 0;
+    padding:0;
+    top:0;
+    left:0;
+}
+/*BUTTONS*/
+.buttons{
+    position: absolute;
+    top: 40%;
+    left: calc((100% - 150px) / 2);
+    width: 150px;
+    height: 150px;
+}
+.inner-buttons{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 0;
+    transition: 2s;
+    cursor: pointer;
+    font-size: .8em !important;
+    position: relative;
+}
+.inner-buttons a{
+    color: white;
+}
+.button-icon{
+    position: absolute;
+    top: 19%;
+    left: 19%;
+}
+.center-buttons{
+    margin-left: calc(150px / 3);
+}
+.right-button{
+    margin-top: -33%;
+    margin-left: calc(150px * 0.66);
+}
+.left-button{
+    margin-top: -66%;
+}
+.visible-div{
+    opacity: 1;
+    transition: 2s;
+}
+.buttons:hover .inner-buttons{
+    opacity: 1;
+    transform: rotate(45deg);
+}
+.buttons:hover .inner-buttons a{
+    color: white;
+}
+.buttons:hover .visible-div{
+    opacity: 0;
+}
+.buttons:hover .reverse-icon{
+    transform: rotate(-45deg);
+}

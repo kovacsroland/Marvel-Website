@@ -1,0 +1,296 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2018.04.29., 12:34:32
+    Author     : latin
+*/
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:400,700,900');
+
+*{
+    color: white;
+    font-family: 'Gothic A1', sans-serif;
+}
+body, html{
+    background-image: url('../img/background/background1.jpg');
+}
+.darkbg-section{
+    background-image: url('../img/background/background4.jpg');;
+}
+.darkbg2-section{
+    background-image: url('../img/background/background5.jpg');;
+}
+.dark-section{
+    background-color: rgb(1, 1, 1);
+}
+.no-space{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.hero-img{
+    width: 100% !important;
+}
+.footer *{
+    color: rgba(255, 255, 255, .5);
+}
+.bg-icon{
+    font-size: 2em;
+    cursor: pointer;
+    margin: 5px;
+}
+.icon-hover:hover *{
+    color: white;
+}
+.icon-list li{
+    list-style-type: none;
+    float: left;
+    margin: 5px;
+}
+.icon-list li a{
+    text-decoration: none;
+}
+.footer-text{
+    font-size: .8em;
+}
+#a{
+    width: 300px;
+    height: 300px;
+}
+h3{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+hr{
+    border: 2px solid white;
+    width: 45%;
+}
+@media only screen and (max-width: 550px){
+    hr{
+        width: 22.5%;
+    }
+}
+.top-navbar *{
+    color: white !important;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 700;   
+}
+.top-navbar-list{
+    margin: 10px;
+}
+.top{
+    position: absolute;
+    z-index: 1000;
+}
+.parallax{
+    background: url('../img/avengers3.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+.top-close, .bottom-close{
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    width: calc(100% - 30px);
+    height: 50%;
+    z-index: 1000;
+    opacity: 0;
+    transition: 4s;
+}
+.shadow, .shadow2, .shadow3, .shadow4{
+    overflow: hidden;
+}
+.top-close{
+    top: -50%;
+    transition: 1s;
+}
+.bottom-close{
+    top: 100%;
+    transition: 1s;
+}
+.shadow:hover .top-close, .shadow:hover .bottom-close, shadow2:hover .down-slide, .shadow3:hover .side-slide-left, .shadow3:hover .side-slide-right, .shadow4:hover .rotate-slide-topleft, .shadow4:hover .rotate-slide-topright{
+    opacity: 1;
+}
+.shadow:hover .top-close, .shadow2:hover .down-slide{
+    top: 0;
+}
+.shadow:hover .bottom-close{
+    top: 50%;   
+}
+.down-slide{
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    width: calc(100% - 30px);
+    height: 100%;
+    z-index: 1000;
+    opacity: 1;
+    transition: 1s;
+    top: -100%;
+}
+.side-slide-right, .side-slide-left{
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    width: calc(50% - 15px);
+    height: 100%;
+    z-index: 1000;
+    opacity: 0;
+    transition: 1s;
+}
+.side-slide-right{
+    left: calc(100% - 15px);
+}
+.side-slide-left{
+    left: calc(-50% + 15px);
+}
+.shadow3:hover .side-slide-left{
+    left: calc(0% + 15px);
+}
+.shadow3:hover .side-slide-right{
+    left: 50%;
+}
+.rotate-slide-topright, .rotate-slide-topleft{
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    width: calc(100% - 30px);
+    height: 100%;
+    z-index: 1000;
+    opacity: 1;
+    transition: 1s;
+}
+.rotate-slide-topright, .rotate-slide-topleft{
+    transform: skewY(-20deg);
+}
+.rotate-slide-topleft{
+    top: 135%;
+}
+.rotate-slide-topright{
+    top: -135%;
+}
+.shadow4:hover .rotate-slide-topright{
+    top: -50%;
+}
+.shadow4:hover .rotate-slide-topleft{
+    top: 50%;
+}
+.reverse-transform{
+    transform: skewY(20deg);
+}
+.hidden-icon{
+    border: 1px solid white !important;
+    background-color: rgba(255, 255, 255, .5) !important;
+}
+.hidden-icon *{
+    color: white !important;
+    border: 1px solid white !important;
+    background-color: white !important;
+}
+.hero-card *{
+    color: rgb(49, 96, 111);
+}
+.hero-btn{
+    color: white !important;
+}
+.send-button{
+    color: rgb(49, 96, 111);
+}
+#demo{
+    background: url('../img/landscape.jpg') no-repeat center;
+    background-size: cover;
+    height: 500px;
+}
+.marvel-text{
+    left: calc((75% - 12px) / 2);
+}
+.marvel-text a p{
+    float: left !important;
+    font-size: 3em;
+    text-align: center;
+    padding: 2px;
+}
+.marvel-text a{
+    text-align: center;
+}
+.marvel-text a p:first-child{
+    animation: textAnimation 1s ease infinite;
+}
+.marvel-text a p:nth-child(2){
+    animation: textAnimation 1s ease infinite;
+    animation-delay: .1s;
+}
+.marvel-text a p:nth-child(3){
+    animation: textAnimation 1s ease infinite;
+    animation-delay: .2s;
+}
+.marvel-text a p:nth-child(4){
+    animation: textAnimation 1s ease infinite;
+    animation-delay: .3s;
+}
+.marvel-text a p:nth-child(5){
+    animation: textAnimation 1s ease infinite;
+    animation-delay: .4s;
+}
+.marvel-text a p:nth-child(6){
+    animation: textAnimation 1s ease infinite;
+    animation-delay: .5s;
+}
+@keyframes textAnimation{
+    0% {color:white;}
+    50% {color:red;}
+    100% {color:white;}
+}
+.input-time{
+    background-color: black !important;
+    font-size: 3em !important;
+    color: white !important;
+    border: none !important;
+}
+@media only screen and (max-width: 375px){
+    .input-time{
+        background-color: black !important;
+        font-size: 2.1em !important;
+        color: white !important;
+        border: none !important;
+    }
+}
+.hero-padding{
+    padding-top: 20%;
+}
+.no-border{
+    border: none !important;
+    outline : none !important;
+}
+.invalid-input{
+    border: 3px solid;
+    border-color: tomato;
+}
+.valid-input{
+    border: 3px solid;
+    border-color: rgb(75, 181, 67);
+}
+.new-line{
+    clear: both;
+}
+.news-div{
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    width: calc(100% - 30px);
+    height: 100%;
+    z-index: 1000;
+    opacity: 0;
+    transition: 2s;
+    top: 0;
+}
+.news:hover .news-div{
+    opacity: 1;
+}
+@media only screen and (max-width: 768px){
+    .news-div button{
+        margin-top: 20%;
+    }
+}
+@media only screen and (max-width: 350px){
+    .news-div button{
+        margin-top: 15%;
+    }
+}
